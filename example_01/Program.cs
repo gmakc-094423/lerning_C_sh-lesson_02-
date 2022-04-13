@@ -1,5 +1,7 @@
 ﻿// Задача 1. Принимает на вход трёхзначное число и на выходе показывает последнюю цифру этого числа 
 
+Console.Clear();
+
 Console.WriteLine("Задача № 1. Последняя цифра трёхзначного числа");
 Console.Write("Введи трёхзначное число: ");
 
@@ -72,3 +74,27 @@ if (testNumber % 2 == 1) {
 else {
   Console.WriteLine("Введенное число " + testNumber + " - чётное"); 
 }
+
+
+// Задача № 5. Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+
+Console.WriteLine();
+Console.WriteLine("Задача № 5. Чётные от 1 до N");
+
+Console.Write("Введи число N: ");
+int theNumberN = Convert.ToInt32(Console.ReadLine());
+
+int counter = 1;
+
+while (counter <= theNumberN)
+{
+  if (counter % 2 != 1) {
+    Console.Write(counter);
+    if (counter < (theNumberN - 1)) {     // расстановка запятых
+      Console.Write(", ");        
+    }
+  }
+  counter += 1;
+}
+
+
