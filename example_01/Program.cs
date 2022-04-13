@@ -20,6 +20,7 @@ else {
 }
 
 //  Задача 2. Напишите программу, которая на вход принимает два числа и выдаёт, какое  число большее, а какое меньшее
+
 Console.WriteLine();
 Console.WriteLine("Задача № 2. Максимальное из двух чисел");
 Console.Write("Введи первое число: ");
@@ -35,6 +36,7 @@ else {
 }
 
 //  Задача 3. Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
+
 Console.WriteLine();
 Console.WriteLine("Задача № 3. Максимальное из трёх чисел");
 
@@ -45,7 +47,7 @@ int secondNumberOfThree = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введи третье число: ");
 int thirdNumberOfThree = Convert.ToInt32(Console.ReadLine());
 
-int maxNumber = firstNumberOfThree;
+int maxNumber = firstNumberOfThree;   // дополнительная переменная
 
 if (maxNumber < secondNumberOfThree) {
   maxNumber = secondNumberOfThree;
@@ -54,3 +56,19 @@ if (maxNumber < thirdNumberOfThree) {
   maxNumber = thirdNumberOfThree;
 }
 Console.WriteLine("MAX= " + maxNumber);
+
+
+// Задача № 4. Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+
+Console.WriteLine();
+Console.WriteLine("Задача № 4. Чётное или нет?");
+
+Console.Write("Введи тестируемое число: ");
+int testNumber = Convert.ToInt32(Console.ReadLine());
+
+if (testNumber % 2 == 1) {
+   Console.WriteLine("Введенное число " + testNumber + " - нечётное");
+}
+else {
+  Console.WriteLine("Введенное число " + testNumber + " - чётное"); 
+}
